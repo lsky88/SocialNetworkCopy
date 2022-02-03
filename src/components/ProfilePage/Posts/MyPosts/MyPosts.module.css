@@ -1,0 +1,10 @@
+/*My Posts CSS */
+.myPosts {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.myPosts h2 {
+	margin-bottom: 10px;
+}

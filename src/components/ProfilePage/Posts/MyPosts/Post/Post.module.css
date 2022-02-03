@@ -1,0 +1,19 @@
+/*Post CSS */
+.postContainer {
+	display: flex;
+	align-items: center;
+	color: #888;
+	margin-top: 10px;
+}
+
+.postContainer .user {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 1px solid #1FDF64;
+	margin-right: 10px;
+}
+
+.post span {
+	color: #1FDF64;
+}

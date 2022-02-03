@@ -1,0 +1,16 @@
+/*Header Module CSS*/
+.header {
+	width: 100%;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid #222;
+	padding: 0 15px;
+}
+
+.headerLogo {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background: #1FDF64;
+}

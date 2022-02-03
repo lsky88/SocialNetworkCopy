@@ -1,3 +1,4 @@
+/*Reset Styles ======================*/
 * {
 	margin: 0;
 	padding: 0;
@@ -6,12 +7,13 @@
 	outline: none;
 	list-style: none;
 	text-decoration: none;
-	overflow: hidden;
 }
+
+/*=============================*/
 
 .app-wrapper {
 	width: 100%;
-	height: 100vh;
+	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -24,68 +26,51 @@
 	padding: 10px 20px;
 }
 
-.header {
-	width: 100%;
-	height: 100px;
-	display: flex;
-	align-items: center;
-	border-bottom: 1px solid #222;
-	padding: 0 15px;
-}
-
-.header-logo {
-	width: 80px;
-	height: 80px;
-	border-radius: 50%;
-	background: yellowgreen;
-}
-
 .sidebar {
 	width: 20%;
+	max-height: calc(100vh - 80px);
 	display: flex;
 	flex-direction: column;
-}
-
-.navigation {
-	width: 100%;
-	border-bottom: 1px solid #222;
-}
-
-.nav-list {
-	display: flex;
-	flex-direction: column;
-}
-
-.list-item {
-	color: #555;
-	height: 50px;
-	width: 100%;
-	display: flex;
-	border-radius: 5px;
-	align-items: center;
-	margin: 0 5px 5px 0;
-	padding: 0 5px;
-	transition: .2s;
-}
-
-.list-item:hover {
-	background: rgba(255, 255, 255, .1);
-}
-
-.footer {
-	width: 100%;
-	display: flex;
-	align-self: end;
-}
-
-.copyrights p {
-	color: #555
+	justify-content: space-between;
 }
 
 .main {
 	width: 80%;
 	display: flex;
+	margin-left: 10px;
+	padding: 0 10px;
 }
+
+button {
+	width: 100px;
+	height: 40px;
+	border-radius: 5px;
+	border: 1px solid #111;
+	background: transparent;
+	color: #888;
+	cursor: pointer;
+	transition: .3s all ease;
+}
+
+button:hover {
+	border: 1px solid #1FDF64;
+	color: #1FDF64;
+	box-shadow: 0 0 4px 1px #1FDF64;
+}
+
+h1, h2, p {
+	color: #888
+}
+
+h1 {
+	font-size: 50px;
+}
+
+h2 {
+	font-size: 36px;
+}
+
+
 
 
 

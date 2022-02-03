@@ -1,8 +1,11 @@
+// Imports ========================
 import './App.css';
-import Header from "./components/Header";
-import Navigation from "./components/Navigation";
-import Footer from "./components/Footer";
+import Header from "./components/Header/Header";
+import Navigation from "./components/Navigation/Navigation";
+import Footer from "./components/Footer/Footer";
+import Profile from "./components/ProfilePage/Profile";
 
+// App ==========================
 const App = () => {
     return (
         <div className="app-wrapper">
@@ -13,7 +16,7 @@ const App = () => {
                     <Footer/>
                 </section>
                 <main className="main">
-
+                    <Profile/>
                 </main>
             </div>
         </div>
