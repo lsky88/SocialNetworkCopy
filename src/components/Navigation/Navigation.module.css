@@ -9,6 +9,10 @@
 }
 
 .listItem {
+	border-radius: 5px;
+}
+
+.listItem a {
 	color: #888;
 	height: 50px;
 	display: flex;
@@ -19,7 +23,7 @@
 	transition: .3s all;
 }
 
-.listItem:hover {
+.listItem a:hover {
 	border: 1px solid #1FDF64;
 	color: #1FDF64;
 	box-shadow: 0 0 5px 1px #1FDF64;

@@ -6,12 +6,30 @@
 	margin-top: 10px;
 }
 
-.postContainer .user {
+.user {
+	display: flex;
+	align-items: center;
+}
+
+.userLogo {
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
 	border: 1px solid #1FDF64;
 	margin-right: 5px;
+}
+
+.userName {
+	margin-right: 10px;
+}
+
+.post {
+	display: flex;
+	align-items: center;
+}
+
+.post p {
+	margin-right: 10px;
 }
 
 .post span {
