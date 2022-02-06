@@ -1,0 +1,27 @@
+/*Dialog CSS*/
+.user {
+	display: flex;
+	align-items: center;
+	height: 50px;
+	margin-right: 10px;
+}
+
+.userLogo {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 1px solid #1FDF64;
+	margin-right: 5px;
+}
+
+.userName {
+	color: #888;
+}
+
+a:hover {
+	color: #1FDF64;
+}
+
+a .active {
+	color: #1FDF64;
+}

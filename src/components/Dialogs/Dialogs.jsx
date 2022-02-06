@@ -1,58 +1,29 @@
 // Imports =========================
 import style from "./Dialogs.module.css"
+import Dialog from "./Dialog/Dialog";
+import Message from "./Message/Message";
 
-// Dialogs =========================
+// Dialogs Component =================
 const Dialogs = (props) => {
     return (
         <section className={style.dialogs}>
             <section className={style.dialogsList}>
-                <div className={style.dialog}>
-                    <div className={style.user}>
-                        <img src="" alt="ava" className={style.userLogo}/>
-                        <div className={style.userName}>Ivan</div>
-                    </div>
-                </div>
-                <div className={style.dialog}>
-                    <div className={style.user}>
-                        <img src="" alt="ava" className={style.userLogo}/>
-                        <div className={style.userName}>Jessica</div>
-                    </div>
-                </div>
-                <div className={style.dialog}>
-                    <div className={style.user}>
-                        <img src="" alt="ava" className={style.userLogo}/>
-                        <div className={style.userName}>Jose</div>
-                    </div>
-                </div>
+                <Dialog name="Ivan" id="1"/>
+                <Dialog name="Maria" id="2"/>
+                <Dialog name="Jose" id="3"/>
+                <Dialog name="Danny" id="4"/>
+                <Dialog name="Hans" id="5"/>
             </section>
             <section className={style.messagesContainer}>
                 <section className={style.messagesList}>
-                    <div className={style.message}>
-                        <div className={style.user}>
-                            <img src="" alt="ava" className={style.userLogo}/>
-                            <div className={style.userName}>Ivan :</div>
-                        </div>
-                        <p>Yo, Bro</p>
-                    </div>
-                    <div className={style.myMessage} >
-                        <p>Hello! :)</p>
-                        <div className={style.user}>
-                            <img src="" alt="ava" className={style.userLogo}/>
-                        </div>
-
-                    </div>
-                    <div className={style.message}>
-                        <div className={style.user}>
-                            <img src="" alt="ava" className={style.userLogo}/>
-                            <div className={style.userName}>Ivan</div>
-                        </div>
-                        <p>Wassup!</p>
-                    </div>
+                    <Message message="Hi!"/>
+                    <Message message="Hello :)"/>
+                    <Message message="What's up, bro?!"/>
                 </section>
                 <section className={style.newMessage}>
                         <textarea name="new" id="newPost"
                                   placeholder="Type your message here :)"></textarea>
-                        <button className="btn">Send</button>
+                    <button className="btn">Send</button>
                 </section>
             </section>
         </section>

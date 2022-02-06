@@ -5,6 +5,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// Index.js ========================
 ReactDOM.render(
     <React.StrictMode>
         <App/>

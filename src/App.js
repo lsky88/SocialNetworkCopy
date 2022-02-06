@@ -5,7 +5,7 @@ import Navigation from "./components/Navigation/Navigation";
 import Footer from "./components/Footer/Footer";
 import Profile from "./components/ProfilePage/Profile";
 import Dialogs from "./components/Dialogs/Dialogs";
-import {BrowserRouter, Route, Routes} from "react-router-dom";
+import {BrowserRouter, Route} from "react-router-dom";
 
 // App ===========================
 const App = () => {
@@ -19,10 +19,8 @@ const App = () => {
                         <Footer/>
                     </section>
                     <main className="main">
-                        <Routes>
-                            <Route element={<Dialogs/>} path="/dialogs"/>
-                            <Route element={<Profile/>} path="/profile"/>
-                        </Routes>
+                        <Route path="/dialogs" component={Dialogs}/>
+                        <Route path="/profile" component={Profile}/>
                     </main>
                 </div>
             </div>

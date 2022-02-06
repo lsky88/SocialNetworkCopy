@@ -1,5 +1,4 @@
 /*Dialogs CSS*/
-
 .dialogs {
 	display: flex;
 	width: 100%;
@@ -23,18 +22,6 @@
 	margin-right: 10px;
 }
 
-.userLogo {
-	width: 40px;
-	height: 40px;
-	border-radius: 50%;
-	border: 1px solid #1FDF64;
-	margin-right: 5px;
-}
-
-.userName {
-	color: #888;
-}
-
 .messagesContainer {
 	width: 80%;
 	display: flex;
@@ -46,15 +33,6 @@
 .messagesList {
 	display: flex;
 	flex-direction: column;
-}
-
-.message {
-	display: flex;
-	align-items: center;
-	border: 1px solid #222;
-	padding: 5px;
-	border-radius: 10px;
-	margin-bottom: 5px;
 }
 
 .myMessage {
@@ -93,3 +71,4 @@
 	border: 1px solid #1FDF64;
 	box-shadow: 0 0 4px 1px #1FDF64;
 }
+

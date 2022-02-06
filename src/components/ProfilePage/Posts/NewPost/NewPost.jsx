@@ -1,7 +1,7 @@
 // Imports =========================
 import style from "./NewPost.module.css";
 
-// New Post ========================
+// New Post Component =================
 const NewPost = () => {
     return (
         <section className={style.newPost}>
