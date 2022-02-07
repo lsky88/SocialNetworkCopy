@@ -8,7 +8,7 @@ import Dialogs from "./components/Dialogs/Dialogs";
 import {Routes, Route} from "react-router-dom";
 
 // App ===========================
-const App = () => {
+const App = (props) => {
     return (
         <div className="app-wrapper">
             <Header/>
@@ -19,8 +19,11 @@ const App = () => {
                 </section>
                 <main className="main">
                     <Routes>
-                        <Route path="/dialogs" element={<Dialogs/>}/>
-                        <Route path="/profile" element={<Profile/>}/>
+                        <Route path="/dialogs"
+                               element={<Dialogs dialogs={props.dialogs}
+                                                 messages={props.messages}/>}/>
+                        <Route path="/profile"
+                               element={<Profile posts={props.posts}/>}/>
                     </Routes>
                 </main>
             </div>
