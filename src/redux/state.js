@@ -15,6 +15,12 @@ let state = {
             {id: 2, message: "Hello :)"},
             {id: 3, message: "What are you doing?"}
         ],
+
+        myMessages: [
+            {id: 1, message: "=)"},
+            {id: 2, message: "o_O"},
+            {id: 3, message: ":("}
+        ]
     },
 
     profilePage: {

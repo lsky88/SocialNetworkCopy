@@ -2,6 +2,7 @@
 import style from "./Dialogs.module.css"
 import Dialog from "./Dialog/Dialog";
 import Message from "./Message/Message";
+import NewMessage from "./NewMessage/NewMessage";
 
 // DialogsPage Component =================
 const Dialogs = (props) => {
@@ -22,11 +23,7 @@ const Dialogs = (props) => {
                 <section className={style.messagesList}>
                     {messagesElements}
                 </section>
-                <section className={style.newMessage}>
-                        <textarea name="new" id="newPost"
-                                  placeholder="Type your message here :)"></textarea>
-                    <button className="btn">Send</button>
-                </section>
+                <NewMessage/>
             </section>
         </section>
     )

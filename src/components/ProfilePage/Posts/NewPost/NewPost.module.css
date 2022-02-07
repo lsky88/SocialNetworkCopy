@@ -12,22 +12,3 @@
 	border: 1px solid #1FDF64;
 	margin-right: 10px;
 }
-
-.newPost textarea {
-	display: flex;
-	background: transparent;
-	resize: none;
-	color: #888;
-	height: 40px;
-	width: 300px;
-	border: 1px solid #111;
-	border-radius: 5px;
-	margin-right: 10px;
-	transition: .3s all ease-in;
-	padding: 5px;
-}
-
-.newPost textarea:focus {
-	border: 1px solid #1FDF64;
-	box-shadow: 0 0 4px 1px #1FDF64;
-}
