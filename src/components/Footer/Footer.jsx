@@ -2,7 +2,7 @@
 import style from './Footer.module.css'
 
 
-// Footer =========================
+// Footer Component ==================
 const Footer = () => {
     return (
         <footer className={style.footer}>

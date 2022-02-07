@@ -2,7 +2,7 @@
 import style from './Navigation.module.css'
 import {NavLink} from "react-router-dom";
 
-// Navigation =======================
+// Navigation Component ===============
 const Navigation = () => {
     return (
         <nav className={style.navigation}>

@@ -3,7 +3,7 @@ import style from "./Posts.module.css";
 import NewPost from "./NewPost/NewPost";
 import MyPosts from "./MyPosts/MyPosts";
 
-// Posts component ===================
+// Posts Component ===================
 const Posts = (props) => {
     return (
         <section className={style.posts}>

@@ -3,14 +3,14 @@ import style from "./Dialogs.module.css"
 import Dialog from "./Dialog/Dialog";
 import Message from "./Message/Message";
 
-// Dialogs Component =================
+// DialogsPage Component =================
 const Dialogs = (props) => {
 
-    let dialogsElements = props.dialogs.map(dialogs => <Dialog
+    let dialogsElements = props.state.dialogs.map(dialogs => <Dialog
         name={dialogs.name}
         id={dialogs.id}/>)
 
-    let messagesElements = props.messages.map(messages => <Message
+    let messagesElements = props.state.messages.map(messages => <Message
         message={messages.message} id={messages.id}/>)
 
     return (

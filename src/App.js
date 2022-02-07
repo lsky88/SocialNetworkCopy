@@ -4,7 +4,7 @@ import Header from "./components/Header/Header";
 import Navigation from "./components/Navigation/Navigation";
 import Footer from "./components/Footer/Footer";
 import Profile from "./components/ProfilePage/Profile";
-import Dialogs from "./components/Dialogs/Dialogs";
+import Dialogs from "./components/DialogsPage/Dialogs";
 import {Routes, Route} from "react-router-dom";
 
 // App ===========================
@@ -19,11 +19,12 @@ const App = (props) => {
                 </section>
                 <main className="main">
                     <Routes>
-                        <Route path="/dialogs"
-                               element={<Dialogs dialogs={props.dialogs}
-                                                 messages={props.messages}/>}/>
                         <Route path="/profile"
-                               element={<Profile posts={props.posts}/>}/>
+                               element={<Profile
+                                   state={props.state.profilePage}/>}/>
+                        <Route path="/dialogs"
+                               element={<Dialogs
+                                   state={props.state.dialogsPage}/>}/>
                     </Routes>
                 </main>
             </div>

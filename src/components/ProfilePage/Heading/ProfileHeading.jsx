@@ -1,7 +1,7 @@
 // Imports ========================
 import style from "./ProfileHeading.module.css";
 
-// Profile Heading ===================
+// Profile Page Heading Component =========
 const ProfileHeading = () => {
     return (
         <section className={style.profilePageHeading}>

@@ -1,7 +1,7 @@
 // Imports =========================
 import style from "./Post.module.css";
 
-// Post ===========================
+// Post Component  ===================
 const Post = (props) => {
     return (
         <div className={style.postContainer}>

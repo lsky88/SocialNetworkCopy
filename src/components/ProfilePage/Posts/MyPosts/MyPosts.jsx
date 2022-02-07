@@ -4,11 +4,12 @@ import Post from "./Post/Post";
 
 // My Posts Component =================
 const MyPosts = (props) => {
+    let postsElements = props.posts.map(posts => <Post
+        user={posts.userName}
+        id={posts.id}
+        message={posts.message}
+        likesCount={posts.likesCount}/>)
 
-    let postsElements = props.posts.map(posts => <Post user={posts.userName}
-                                                       id={posts.id}
-                                                       message={posts.message}
-                                                       likesCount={posts.likesCount}/>)
 
     return (
         <section className={style.myPosts}>

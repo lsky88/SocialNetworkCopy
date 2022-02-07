@@ -1,7 +1,7 @@
 // Imports ========================
 import style from './Header.module.css'
 
-// Header  ========================
+// Header Component  =================
 const Header = () => {
     return (
         <header className={style.header}>

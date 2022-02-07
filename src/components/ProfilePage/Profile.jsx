@@ -8,7 +8,7 @@ const Profile = (props) => {
     return (
         <section className={style.profilePage}>
             <ProfileHeading/>
-            <Posts posts={props.posts}/>
+            <Posts posts={props.state.posts}/>
         </section>
     )
 }
