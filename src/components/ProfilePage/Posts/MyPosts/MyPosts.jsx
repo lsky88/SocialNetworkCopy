@@ -2,14 +2,24 @@
 import style from "./MyPosts.module.css";
 import Post from "./Post/Post";
 
-// My Posts ========================
+// My Posts Component =================
 const MyPosts = () => {
+
+    let posts = [
+        {userName: "James", id: 1, message: "Hello", likesCount: 3},
+        {userName: "Sandra", id: 2, message: "What's up?", likesCount: 5},
+        {userName: "Andy", id: 3, message: "Yo!", likesCount: 7},
+    ];
+
+    let postsElements = posts.map(posts => <Post user={posts.userName}
+                                                 id={posts.id}
+                                                 message={posts.message}
+                                                 likesCount={posts.likesCount}/>)
+
     return (
         <section className={style.myPosts}>
             <h2>Posts</h2>
-            <Post  user="James" message="Hello" id="1" likesCount="3"/>
-            <Post user="Sandra" message="What's up?" id="2" likesCount="5"/>
-            <Post user="Andy" message="Yo" id="3" likesCount="7"/>
+            {postsElements}
         </section>
     )
 }

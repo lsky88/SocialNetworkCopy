@@ -4,21 +4,36 @@ import Dialog from "./Dialog/Dialog";
 import Message from "./Message/Message";
 
 // Dialogs Component =================
-const Dialogs = (props) => {
+const Dialogs = () => {
+
+    let dialogs = [
+        {id: 1, name: "Ivan"},
+        {id: 2, name: "Maria"},
+        {id: 3, name: "Jose"},
+        {id: 4, name: "Danny"},
+        {id: 5, name: "Hans"},
+    ]
+
+    let messages = [
+        {id: 1, message: "Hi!"},
+        {id: 2, message: "Hello :)"},
+        {id: 3, message: "What are you doing?"}
+    ];
+
+    let dialogsElements = dialogs.map(dialogs => <Dialog name={dialogs.name}
+                                                         id={dialogs.id}/>)
+
+    let messagesElements = messages.map(messages => <Message
+        message={messages.message} id={messages.id}/>)
+
     return (
         <section className={style.dialogs}>
             <section className={style.dialogsList}>
-                <Dialog name="Ivan" id="1"/>
-                <Dialog name="Maria" id="2"/>
-                <Dialog name="Jose" id="3"/>
-                <Dialog name="Danny" id="4"/>
-                <Dialog name="Hans" id="5"/>
+                {dialogsElements}
             </section>
             <section className={style.messagesContainer}>
                 <section className={style.messagesList}>
-                    <Message message="Hi!"/>
-                    <Message message="Hello :)"/>
-                    <Message message="What's up, bro?!"/>
+                    {messagesElements}
                 </section>
                 <section className={style.newMessage}>
                         <textarea name="new" id="newPost"
