@@ -7,7 +7,7 @@ import MyPosts from "./MyPosts/MyPosts";
 const Posts = (props) => {
     return (
         <section className={style.posts}>
-            <NewPost/>
+            <NewPost dispatch={props.dispatch}/>
             <MyPosts posts={props.posts}/>
         </section>
     )

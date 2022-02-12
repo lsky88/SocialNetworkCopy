@@ -35,4 +35,15 @@
 	flex-direction: column;
 }
 
+/*New Message Module CSS*/
+.newMessage {
+	margin-top: 10px;
+	display: flex;
+	align-items: center;
+}
+
+.newMessage textarea {
+	width: calc(100% - 100px)
+}
+
 

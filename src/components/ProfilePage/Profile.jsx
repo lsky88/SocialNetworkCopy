@@ -8,7 +8,10 @@ const Profile = (props) => {
     return (
         <section className={style.profilePage}>
             <ProfileHeading/>
-            <Posts posts={props.state.posts}/>
+            <Posts posts={props.profilePage.posts}
+                   newPostText={props.profilePage.newPostText}
+                   dispatch={props.dispatch}
+            />
         </section>
     )
 }
