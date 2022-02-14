@@ -1,4 +1,4 @@
-// Imports =========================
+// Import =========================
 import style from "./Posts.module.css";
 import NewPost from "./NewPost/NewPost";
 import MyPosts from "./MyPosts/MyPosts";

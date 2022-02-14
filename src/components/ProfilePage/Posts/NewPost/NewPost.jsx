@@ -1,7 +1,10 @@
-// Imports =========================
+// Import =========================
 import React from "react";
 import style from "./NewPost.module.css";
-import {addPostAC, updateNewPostTextAC} from "../../../../redux/state";
+import {
+    addPostAC,
+    updateNewPostTextAC
+} from "../../../../redux/profile-reducer";
 
 // New Post Component =================
 const NewPost = (props) => {

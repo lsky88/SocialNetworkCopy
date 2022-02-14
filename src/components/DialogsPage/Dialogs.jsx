@@ -1,8 +1,11 @@
-// Imports =========================
+// Import =========================
 import style from "./Dialogs.module.css"
 import Dialog from "./Dialog/Dialog";
 import Message from "./Message/Message";
-import {sendMessageAC, updateNewMessageBodyAC} from "../../redux/state";
+import {
+    sendMessageAC,
+    updateNewMessageBodyAC
+} from "../../redux/dialogs-reducer";
 
 // DialogsPage Component =================
 const Dialogs = (props) => {
