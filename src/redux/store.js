@@ -14,13 +14,11 @@ let store = {
                 {id: 4, name: "Danny"},
                 {id: 5, name: "Hans"},
             ],
-
             messages: [
                 {id: 1, message: "Hi!"},
                 {id: 2, message: "Hello :)"},
                 {id: 3, message: "What are you doing?"}
             ],
-
             newMessageBody: ""
         },
 
@@ -36,7 +34,7 @@ let store = {
                 },
                 {userName: "Andy", id: 3, message: "Yo!", likesCount: 7},
             ],
-            newPostText: "lol"
+            newPostText: ""
         }
     },
 

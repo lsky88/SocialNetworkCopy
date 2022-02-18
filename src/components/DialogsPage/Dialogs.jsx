@@ -2,15 +2,11 @@
 import style from "./Dialogs.module.css"
 import Dialog from "./Dialog/Dialog";
 import Message from "./Message/Message";
-import {
-    sendMessageAC,
-    updateNewMessageBodyAC
-} from "../../redux/dialogs-reducer";
 
 // DialogsPage Component =================
 const Dialogs = (props) => {
 
-    let state = props.store.getState().dialogsPage;
+    let state = props.dialogsPage;
 
     let dialogsElements = state.dialogs.map(dialog => <Dialog
         name={dialog.name} id={dialog.id}/>);
@@ -19,12 +15,12 @@ const Dialogs = (props) => {
     let newMessageBody = state.newMessageBody;
 
     let onSendMessageClick = () => {
-        props.store.dispatch(sendMessageAC())
+        props.sendMessage();
     }
 
     let onSendMessageChange = (event) => {
         let body = event.target.value;
-        props.store.dispatch(updateNewMessageBodyAC(body))
+        props.updateNewMessageBody(body);
     }
 
     return (

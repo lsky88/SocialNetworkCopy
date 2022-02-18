@@ -9,16 +9,14 @@ const Navigation = () => {
             <ul className={style.navList}>
                 <li className={style.listItem}><NavLink
                     to="/profile">Profile</NavLink></li>
-                <li className={style.listItem}><NavLink to="news">News</NavLink>
-                </li>
                 <li className={style.listItem}><NavLink
-                    to="friends">Friends</NavLink>
-                </li>
+                    to="news">News</NavLink></li>
+                <li className={style.listItem}><NavLink
+                    to="friends">Friends</NavLink></li>
                 <li className={style.listItem}><NavLink
                     to="/dialogs">Messages</NavLink></li>
                 <li className={style.listItem}><NavLink
-                    to="music">Music</NavLink>
-                </li>
+                    to="music">Music</NavLink></li>
                 <li className={style.listItem}><NavLink
                     to="settings">Settings</NavLink></li>
             </ul>
