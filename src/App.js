@@ -8,7 +8,7 @@ import {Routes, Route} from "react-router-dom";
 import DialogsContainer from "./components/DialogsPage/DialogsContainer";
 
 // App ===========================
-const App = (props) => {
+const App = () => {
     return (
         <div className="app-wrapper">
             <Header/>
@@ -19,10 +19,8 @@ const App = (props) => {
                 </section>
                 <main className="main">
                     <Routes>
-                        <Route path="/profile" element={<Profile
-                            store={props.store}/>}/>
-                        <Route path="/dialogs" element={<DialogsContainer
-                            store={props.store}/>}/>
+                        <Route path="/profile" element={<Profile/>}/>
+                        <Route path="/dialogs" element={<DialogsContainer/>}/>
                     </Routes>
                 </main>
             </div>
